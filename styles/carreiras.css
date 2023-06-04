@@ -34,26 +34,50 @@ table tr th {
   text-align: left;
 }
 
+p {
+  padding: 0 0 10px 0;
+}
+
 form {
   position: relative;
-  font-size: 2.5ch;
+  font-size: 15px;
+  font-weight: bold;
   display: grid;
   grid-template-columns: 100px 0.5fr;
   row-gap: 10px;
 }
 
+
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+select {
   border: 1px solid var(--mainColor);
   outline: 0;
   padding: 5px 10px;
   font-size: 15px;
 }
 
-input[type="submit"] {
+input[type="submit"],
+button {
   position: relative;
   border: 1px solid var(--mainColor);
   outline: 0;
   width: 100%;
+  padding: 5px 20px;
   -ms-grid-column-span: 2;
+
+  transition: 0.3s;
 }
+
+input[type="submit"]:hover,
+button:hover
+{
+  background-color: var(--mainColor);
+  color: white;
+}
+
+ul li
+{
+  list-style: none;
+}
+

@@ -1,9 +1,11 @@
 .pro_cont {
+  position: relative;
   display: flex;
   margin-top: calc(var(--headerSize) + 10px);
   justify-content: center;
   align-items: center;
   column-gap: 10px;
+  height: calc(98% - var(--headerSize));
 }
 
 .produto {
@@ -21,6 +23,7 @@
 .produto:hover {
   background-color: white;
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .produto h2 {
