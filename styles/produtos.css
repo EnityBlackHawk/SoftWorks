@@ -1,0 +1,41 @@
+.pro_cont {
+  display: flex;
+  margin-top: calc(var(--headerSize) + 10px);
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.700);
+  padding: 25px 20px;
+  border-radius: 10px;
+
+  transition: 0.5s;
+}
+
+.produto:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+
+.produto h2 {
+  color: var(--mainColor);
+  padding: 5px 0;
+  align-self: start;
+}
+
+.produto p {
+  align-self: flex-start;
+}
+
+img {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  object-fit:cover;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/carreiras.css" />
+  </head>
+  <body>
+    <nav>
+      <a class="title" href="../index.html">SoftWorks Development</a>
+      <ul>
+        <li>
+          <a href="produtos.html">Produtos</a>
+        </li>
+        <li>
+          <a href="#">Carreiras</a>
+        </li>
+      </ul>
+    </nav>
+    <script src="../main.js"></script>
+
+    <div class="content">
+      <div class="localContentBg">
+            <div class="localContent">
+                  <h2>Carreiras</h2>
+                  <h3>Vagas disponíveis </h3>
+                  <p>Selecione as vagas que deseja concorrer:</p>
+                  <table>
+                        <tr onclick="selectJob(this)">
+                              <th>Cargo</th>
+                              <th>Localização</th>
+                              <th>Vagas disponíveis</th>
+                        </tr>
+                        
+                        <tr onclick="selectJob(this)">
+                              <td>Programador Junior em C++</td>
+                              <td>Remoto</td>
+                              <td>4</td>
+                        </tr>
+                        <tr onclick="selectJob(this)">
+                              <td>Programador Junior em C#</td>
+                              <td>Dois Vizinhos, Paraná</td>
+                              <td>2</td>
+                        </tr>
+                        <tr onclick="selectJob(this)">
+                              <td>Engenheiro de Software</td>
+                              <td>Dois Vizinhos, Paraná</td>
+                              <td>1</td>
+                        </tr>
+
+                  </table>
+                  <h3>Envie seu curriculo: </h3>
+                  <form>
+                        <label>Nome: </label>
+                        <input  type="text"/>
+                        <label>Email: </label>
+                        <input type="email"/>
+                        <label>Curriculo: </label>
+                        <input type="file"/>
+                        <label>Vagas:</label>
+                        <ul id="vagasSelecionadas">
+                        </ul>
+                        <input type="submit" value="Enviar"/>
+                  </form>
+            </div>
+      </div>
+    </div>
+    <script src="../carreiras.js"></script>
+  </body>
+</html>

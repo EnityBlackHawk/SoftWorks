@@ -1,0 +1,27 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content h1 {
+  color: white;
+}
+
+.content button {
+  font-size: 20px;
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.content button:hover {
+  color: var(--mainColor);
+  background-color: white;
+}
