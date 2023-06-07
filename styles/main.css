@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: #5b0c92;
 }
 
 nav {
@@ -44,6 +44,13 @@ nav a:hover {
   color: white;
 }
 
+nav button {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  width: 40px;
+}
+
 .thisLocalNow {
   background: black;
   color: white;
@@ -55,10 +62,11 @@ nav a:hover {
   padding: 20px;
 }
 
+
 .content {
   position: absolute;
   background: linear-gradient(45deg, rgb(47, 26, 167), purple);
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -76,4 +84,32 @@ footer h2 {
 
 footer li span {
   font-weight: bold;
+}
+
+@media (max-width: 630px) {
+  
+  nav ul {
+    position: static;
+    align-self: flex-start;
+  }
+
+  .title
+  {
+    align-self: flex-start;
+  }
+
+  nav ul li 
+  {
+    display: block;
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav li a {
+    padding: 10px;
+  }
+  
 }

@@ -5,6 +5,7 @@ img {
   align-self: center;
   margin-bottom: 20px;
   border-radius: 10px;
+  margin-right: 10px;
 }
 
 .localContentBg {
@@ -13,8 +14,7 @@ img {
 }
 
 .localContent {
-  position: relative;
-  bottom: 15%;
+
   align-self: center;
 }
 
@@ -25,4 +25,20 @@ h2 {
 button {
   margin-top: 10px;
   width: 50%;
+}
+
+@media (max-width: 1100px) {
+  .localContentBg{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  img {
+    margin: 0;
+  }
+
+  .localContent {
+    grid-row-start: 2;
+    align-self:start;
+  }
 }

@@ -54,20 +54,22 @@
             </tr>
           </table>
           <h3>Envie seu curriculo:</h3>
-          <form>
+          <form onsubmit="gotoLove(event)">
             <label>Nome: </label>
-            <input type="text" />
+            <input type="text"/>
             <label>Email: </label>
             <input type="email" />
             <label>Curriculo: </label>
             <input type="file" />
             <label>Vagas:</label>
             <ul id="vagasSelecionadas"></ul>
-            <input type="submit" value="Enviar" />
+            <input type="submit" value="Eviar"/>
           </form>
+          
         </div>
       </div>
     </div>
     <script src="../carreiras.js"></script>
+    <script src="../gotos.js"></script>
   </body>
 </html>

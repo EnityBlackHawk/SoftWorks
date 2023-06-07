@@ -1,11 +1,13 @@
 .pro_cont {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   margin-top: calc(var(--headerSize) + 10px);
   justify-content: center;
   align-items: center;
   column-gap: 10px;
-  height: calc(98% - var(--headerSize));
+  row-gap: 10px;
+  height: calc(100% - var(--headerSize));
 }
 
 .produto {
