@@ -19,9 +19,11 @@ nav {
   position: fixed;
   z-index: 2;
   width: 100%;
+  transition: background-color 0.3s;
 }
 
 nav ul {
+  display: block;
   position: absolute;
   right: 10px;
   align-self: center;
@@ -62,6 +64,28 @@ nav button {
   padding: 20px;
 }
 
+#menuBtn 
+{
+  display: none;
+  border: none;
+  width: 50px;
+  height: var(--headerSize);
+  margin: 0;
+  background-color: transparent;
+
+  transition: background-color 0.3s;
+}
+
+#menuBtn:hover {
+  background-color: var(--mainColor);
+}
+
+#menuBtn img {
+
+  height: 70%;
+  width: 70%;
+
+}
 
 .content {
   position: absolute;
@@ -87,8 +111,13 @@ footer li span {
 }
 
 @media (max-width: 630px) {
+
+  #menuBtn {
+    display: block;
+  }
   
   nav ul {
+    display: none;
     position: static;
     align-self: flex-start;
   }

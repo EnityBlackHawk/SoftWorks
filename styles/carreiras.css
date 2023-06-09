@@ -58,7 +58,7 @@ select {
 }
 
 input[type="submit"],
-button {
+.localContent button {
   position: relative;
   border: 1px solid var(--mainColor);
   outline: 0;
@@ -70,7 +70,7 @@ button {
 }
 
 input[type="submit"]:hover,
-button:hover
+.localContent button:hover 
 {
   background-color: var(--mainColor);
   color: white;
