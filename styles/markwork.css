@@ -8,13 +8,19 @@ img {
   margin-right: 10px;
 }
 
+.img-portrait
+{
+  width: auto;
+  height: 100%;
+}
+
+
 .localContentBg {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .localContent {
-
   align-self: center;
 }
 
@@ -28,7 +34,7 @@ button {
 }
 
 @media (max-width: 1100px) {
-  .localContentBg{
+  .localContentBg {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
   }
@@ -39,6 +45,6 @@ button {
 
   .localContent {
     grid-row-start: 2;
-    align-self:start;
+    align-self: start;
   }
 }

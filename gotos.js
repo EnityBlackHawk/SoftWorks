@@ -16,6 +16,7 @@ function gotoEngineWorks()
   window.location.href = "produtos/EngineWorks.html";
 }
 
+
 function gotoLove(e) {
   let t = document.querySelector("form input[type='text']").value;
   if (t == "Miriam" || t == "Miriam eu te amo") {
