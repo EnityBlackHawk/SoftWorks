@@ -114,7 +114,7 @@ footer li span {
   font-weight: bold;
 }
 
-@media (max-width: 630px) {
+@media (max-width: 760px) {
 
   #menuBtn {
     display: block;
